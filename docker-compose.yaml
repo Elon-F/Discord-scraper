@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  DiscordScraper:
+    image: discord_scraper:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    env_file: .env
